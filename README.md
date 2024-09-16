@@ -1,0 +1,1 @@
+# canvas_ity_class_minimal_repro
