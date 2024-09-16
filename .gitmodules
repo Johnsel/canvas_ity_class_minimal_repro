@@ -1,0 +1,3 @@
+[submodule "canvas_ity"]
+	path = canvas_ity
+	url = git@github.com:a-e-k/canvas_ity.git

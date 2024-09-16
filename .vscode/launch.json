@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch", // Name of your configuration
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/src/ngscopeclient/ngscoecloem", // Path to your executable
+            "args": [], // Command-line arguments if needed
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false, // Set to true if you want an external terminal for input/output
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "miDebuggerPath": "/usr/bin/gdb", // Path to gdb
+            "preLaunchTask": "build", // This will automatically build before debugging
+            "internalConsoleOptions": "openOnSessionStart",
+            "logging": {
+                "engineLogging": false
+            }
+        }
+    ]
+}
